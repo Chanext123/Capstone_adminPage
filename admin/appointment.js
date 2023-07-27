@@ -52,3 +52,25 @@ confirmLogoutBtn.addEventListener('click', () => {
 
 // Event listener to handle cancel
 cancelLogoutBtn.addEventListener('click', hideModal);
+
+
+
+
+
+// ======================= for the dropdown =========================
+function toggleDropdown() {
+  var dropdownContent = document.getElementById("dropdownContent");
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+  } else {
+    dropdownContent.style.display = "block";
+  }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+  var dropdownContent = document.getElementById("dropdownContent");
+  if (event.target !== dropdownContent && !event.target.matches('.user')) {
+    dropdownContent.style.display = "none";
+  }
+}

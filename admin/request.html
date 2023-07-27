@@ -23,14 +23,14 @@
     <div class="grid-container">
 
         <!-- The modal -->
-        <div id="logoutModal" class="modal">
+        <!-- <div id="logoutModal" class="modal">
             <div class="modal-content">
                 <h2>Logout</h2>
                 <p>Are you sure you want to logout?</p>
                 <button id="confirmLogout">Logout</button>
                 <button id="cancelLogout">Cancel</button>
             </div>
-        </div>
+        </div> -->
 
         <!-- Header -->
         <header class="header">
@@ -41,7 +41,18 @@
 
             </div>
             <div class="header-right">
-                <span class="material-icons-outlined" id="logoutBtn"> <img src="img/favio.png" alt=""></span>
+                <span class="material-icons-outlined" id="logoutBtn" onclick="toggleDropdown()"> <img src="img/favio.png" alt=""></span>
+                <div class="dropdown-content" id="dropdownContent">
+                    <div class="dropdown-item"><a href="">Go to site</a> 
+                    </div>
+
+                    <div class="dropdown-item"><a href="#">Change Pass</a> 
+                    </div>
+
+                    <div class="dropdown-item"><a href="logoutTest.html">Logout</a> 
+                    </div>
+                   
+                </div>
             </div>
         </header>
         <!-- End Header -->
@@ -77,11 +88,11 @@
                     </a>
                 </li>
 
-                <!-- <li class="sidebar-list-item">
-                    <a href="#">
-                        <span class="gotosite"></span> Go to Site
+                <li class="sidebar-list-item" class="active">
+                    <a href="timeslots.html">
+                        <span class="material-icons-outlined">list</span> Timeslots
                     </a>
-                </li> -->
+                </li>
             </ul>
         </aside>
         <!-- End Sidebar -->

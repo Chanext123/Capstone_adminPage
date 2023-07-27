@@ -53,8 +53,45 @@ body {
     border: 1px solid #FF7C03;
     border-radius: 50%;
   }
+
+
+
+
+   /* Styling for the dropdown menu */
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F8AF5B;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    margin-left: -60px;
+    width: 115px;
+    margin-top: 5px;
+}
+
+/* Styling for the dropdown items */
+.dropdown-item {
+    padding: 10px;
+}
+.header-right a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+
   
+}
+
+
+.dropdown-item:hover{
+  cursor: pointer;
+  background: #FF7C03;
+}
   
+
+
+
   /* ---------- SIDEBAR ---------- */
   
   #sidebar {

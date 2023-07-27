@@ -120,3 +120,22 @@ openModalBtn3.addEventListener('click', () => {
 closeModalBtn3.addEventListener('click', () => {
     modalR3.classList.remove('open');
 });
+
+
+// ======================= for the dropdown =========================
+function toggleDropdown() {
+  var dropdownContent = document.getElementById("dropdownContent");
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+  } else {
+    dropdownContent.style.display = "block";
+  }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+  var dropdownContent = document.getElementById("dropdownContent");
+  if (event.target !== dropdownContent && !event.target.matches('.user')) {
+    dropdownContent.style.display = "none";
+  }
+}

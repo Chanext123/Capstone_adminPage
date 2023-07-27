@@ -18,6 +18,8 @@ function closeSidebar() {
 }
 
 
+
+
 // ====================== for the logout ====================
 // Get the modal element
 const modal = document.getElementById('logoutModal');
@@ -50,6 +52,7 @@ confirmLogoutBtn.addEventListener('click', () => {
 
 // Event listener to handle cancel
 cancelLogoutBtn.addEventListener('click', hideModal);
+
 
 
 
